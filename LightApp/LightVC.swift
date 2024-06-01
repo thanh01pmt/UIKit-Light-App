@@ -34,7 +34,7 @@ class LightVC : UIViewController {
             lblStatus.textColor = .black
             lblStatus.text = "Light is On"
             btnToggleLight.setTitle("Light Off", for: .normal)
-            btnToggleLight.backgroundColor = .red
+            btnToggleLight.tintColor = .red
         } else {
             UIView.animate(withDuration: 1.0) {
                 self.uivLight.backgroundColor = .black
@@ -42,7 +42,7 @@ class LightVC : UIViewController {
             lblStatus.textColor = .white
             lblStatus.text = "Light is Off"
             btnToggleLight.setTitle("Light On", for: .normal)
-            btnToggleLight.backgroundColor = .blue
+            btnToggleLight.tintColor = .blue
         }
     }
 }
